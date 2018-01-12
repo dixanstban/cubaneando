@@ -1,0 +1,8 @@
+.userlist {
+    background-color: #ff9526;
+    top: 50px;
+    height: calc(100% - 50px);
+    right: 0px;
+    width: 300px;
+    position: absolute;
+}
