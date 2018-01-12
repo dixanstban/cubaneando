@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { usuario } from '../usuario';
+import { USUARIOS } from '../lista-usuarios';
 
 @Component({
   selector: 'app-userlist',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserlistComponent implements OnInit {
 
-  constructor() { }
+  usuarios = USUARIOS;
+  selusuario: usuario;
 
-  ngOnInit() {
+  constructor() {}
+  ngOnInit() {}
+
+  onSelect(us: usuario): void {
+    this.selusuario = us;
   }
 
 }

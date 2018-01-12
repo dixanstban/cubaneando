@@ -1,3 +1,7 @@
 <div class="userlist">
-    Lista de usuarios...
+    <ul class="usuarios">
+        <li *ngFor="let usuario of usuarios" (click)="onSelect(usuario)">
+        <span class="badge">{{usuario.id}}</span> {{usuario.nombre}}
+    </li>
+    </ul>
 </div>

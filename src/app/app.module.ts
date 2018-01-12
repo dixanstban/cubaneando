@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
 import { UserlistComponent } from './userlist/userlist.component';
+import { UsuarioTabComponent } from './usuario-tab/usuario-tab.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TopComponent,
-    UserlistComponent
+    UserlistComponent,
+    UsuarioTabComponent
   ],
   imports: [
     BrowserModule
