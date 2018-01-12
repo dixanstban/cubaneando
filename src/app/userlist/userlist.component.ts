@@ -15,9 +15,13 @@ export class UserlistComponent implements OnInit {
 
   usuarios = USUARIOS;
   selusuario: usuario;
-  tabs : tab[] = [
-
-  ]
+  mitabs : tab[] =[{
+    usuario: this.usuarios[0],
+    mensajes : [{
+      usuario:this.usuarios[0],
+      texto:'Hola Hola'
+    }]
+  }] ;
 
 
   constructor() {

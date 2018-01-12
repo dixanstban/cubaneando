@@ -3,5 +3,5 @@ import { mensaje } from './mensaje';
 
 export class tab {
     usuario : usuario;
-    mensaje: mensaje;
+    mensajes: mensaje[];
 }
