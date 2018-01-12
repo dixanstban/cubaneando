@@ -1,0 +1,8 @@
+.usertab {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    left: -70px;
+    width: 70px;
+    background-color: #ff8400;
+}
