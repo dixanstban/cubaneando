@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
+import { UserlistComponent } from './userlist/userlist.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopComponent
+    TopComponent,
+    UserlistComponent
   ],
   imports: [
     BrowserModule
