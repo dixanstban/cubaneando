@@ -1,14 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-top></app-top>
 <app-userlist (newseltab)="newseltab($event)"></app-userlist>
+<div class="mainzone">
+    <div class="zonescroll">
 
-<div class="usermess">
-    mensajes
-      <ul>
-        <li *ngFor="let msg of seltab.mensajes">
-            <img [title]="msg.usuario.nombre" src="assets/img/no-avatar.jpg" />
-            <a>{{msg.texto}}</a>
-        </li>
-    </ul>
+        <div class="realscroll" style="position: relative;">
+            <div style="position: absolute; height: 100%; width: 100%">
+                <div class="zonemsg" style="position: relative; overflow: scroll; height: 100%">
+                    <ul>
+                        <li *ngFor="let msg of seltab.mensajes" class="usermask">
+                            <img [title]="msg.usuario.nombre" src="assets/img/no-avatar.jpg"/>
+                            <b>{{msg.usuario.nombre}}</b>:
+                            <a>{{msg.texto}}</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zonetxt" contenteditable="true">
+        aca abajo
+    </div>
 </div>
+
 

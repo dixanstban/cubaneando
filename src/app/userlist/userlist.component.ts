@@ -19,9 +19,9 @@ export class UserlistComponent implements OnInit {
   @Output() newseltab = new EventEmitter();
 
   mitabs : tab[] =[{
-    usuario: this.usuarios[0],
+    usuario : { id:0 , nombre: 'Lobby'},
     mensajes : [{
-      usuario:this.usuarios[0],
+      usuario: { id:0 , nombre: 'Lobby'},
       texto:'Hola Hola'
     }]
   }] ;

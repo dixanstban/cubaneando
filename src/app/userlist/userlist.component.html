@@ -1,6 +1,6 @@
 <div class="userlist">
     <ul class="usuarios">
-        <li *ngFor="let usuario of usuarios" (click)="onSelect(usuario)">
+        <li *ngFor="let usuario of usuarios" (click)="onSelect(usuario)" class="usermask">
         <span class="badge">{{usuario.id}}</span> {{usuario.nombre}}
     </li>
     </ul>
