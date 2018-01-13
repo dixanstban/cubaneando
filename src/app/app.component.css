@@ -1,0 +1,4 @@
+.usermess {
+    position: absolute;
+    width: calc(100% - 70px);
+}

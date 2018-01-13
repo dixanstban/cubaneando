@@ -1,4 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-top></app-top>
-<app-userlist></app-userlist>
+<app-userlist (newseltab)="newseltab($event)"></app-userlist>
+
+<div class="usermess">
+    mensajes
+      <ul>
+        <li *ngFor="let msg of seltab.mensajes">
+            <img [title]="msg.usuario.nombre" src="assets/img/no-avatar.jpg" />
+            <a>{{msg.texto}}</a>
+        </li>
+    </ul>
+</div>
 

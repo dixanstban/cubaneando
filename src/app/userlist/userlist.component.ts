@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { usuario } from '../usuario';
-import { mensaje } from '../mensaje';
 
 import { USUARIOS } from '../lista-usuarios';
 import { tab } from '../tab';
@@ -13,8 +12,12 @@ import { tab } from '../tab';
 })
 export class UserlistComponent implements OnInit {
 
+
   usuarios = USUARIOS;
   selusuario: usuario;
+
+  @Output() newseltab = new EventEmitter();
+
   mitabs : tab[] =[{
     usuario: this.usuarios[0],
     mensajes : [{
@@ -27,7 +30,10 @@ export class UserlistComponent implements OnInit {
   constructor() {
 
   }
-  ngOnInit() {}
+
+  ngOnInit() {
+      this.newseltab.emit({current : this.mitabs[0]});
+  }
 
   onSelect(us: usuario): void {
     this.selusuario = us;

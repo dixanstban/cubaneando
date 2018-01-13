@@ -1,3 +1,9 @@
 <div class="usertab">
-Ya tu sabes :)
+<ul>
+    <li *ngFor="let tab of tabs">
+        <img [title]="tab.usuario.nombre" src="assets/img/no-avatar.jpg" />
+
+    </li>
+</ul>
+
 </div>

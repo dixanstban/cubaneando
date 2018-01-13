@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input} from '@angular/core';
+import { tab } from '../tab';
 
 @Component({
   selector: 'app-usuario-tab',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsuarioTabComponent implements OnInit {
 
+  @Input() tabs : tab[];
   constructor() { }
 
   ngOnInit() {
