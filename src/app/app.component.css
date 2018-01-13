@@ -18,14 +18,14 @@
 
 .realscroll {
 
-
+    position: relative;
     background: #8a6d3b;
     width: 100%;
     height: 100%;
 
 }
-.zonemsg1 {
-    width: 100%;
+.zonemsg {
+    position: relative; overflow: scroll; height: 100%
 }
 
 
